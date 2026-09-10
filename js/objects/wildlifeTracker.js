@@ -44,3 +44,17 @@ function removeEndangeredStatus(animal) {
 }
 
 console.log(removeEndangeredStatus(tiger))
+
+
+//check if the animal object has a habitat property
+function hasHabitat(animal) {
+  
+  if(animal.hasOwnProperty ("habitat")) 
+    return true
+     else {
+    return false
+  }
+}
+
+console.log(hasHabitat(tiger))
+console.log(hasHabitat(elephant))
