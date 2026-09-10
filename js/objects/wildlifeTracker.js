@@ -58,3 +58,12 @@ function hasHabitat(animal) {
 
 console.log(hasHabitat(tiger))
 console.log(hasHabitat(elephant))
+
+
+//get the value of a property from the animal object using bracket notation
+function getProperty(animal, propertyName) {
+  return animal[propertyName]
+}
+
+console.log(getProperty(tiger, "species"))
+console.log(getProperty(elephant, "age"))
