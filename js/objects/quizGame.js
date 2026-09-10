@@ -42,6 +42,10 @@ function getRandomComputerChoice(choicesArray) {
   return choicesArray[randomIndex];
 }
 
-function getResults() {
-
-}  
+function getResults(questionObj, computerChoice,) {
+if(computerChoice === questionObj.answer) {
+  return "The computer's choice is correct!"
+} else {
+return `The computer's choice is wrong. The correct answer is: ${questionObj.answer}`
+}
+}
