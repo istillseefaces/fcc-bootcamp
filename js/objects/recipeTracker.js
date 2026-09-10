@@ -38,3 +38,6 @@ function getDifficultyLevel(cookingTime) {
 
 const recipe1TotalIngredients = getTotalIngredients(recipe1.ingredients);
 const recipe1DifficultyLevel = getDifficultyLevel(recipe1.levevl)
+
+console.log(recipe1TotalIngredients)
+console.log(recipe1DifficultyLevel)
