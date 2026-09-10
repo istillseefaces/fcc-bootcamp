@@ -44,3 +44,9 @@ console.log(recipe1DifficultyLevel);
 
 recipe1.totalIngredients = recipe1TotalIngredients;
 recipe1.difficultyLevel = recipe1DifficultyLevel
+
+recipe2.totalIngredients = getTotalIngredients(recipe2.ingredients);
+recipe2.difficultyLevel = getDifficultyLevel(recipe2.cookingTime);
+
+recipe3.totalIngredients = getTotalIngredients(recipe3.ingredients);
+recipe3.difficultyLevel = getDifficultyLevel(recipe3.cookingTime);
