@@ -35,3 +35,12 @@ function updateAge(animal, newAge) {
 }
 
 console.log(updateAge(elephant, 12))
+
+//remove the isEndangered property from the animal object
+function removeEndangeredStatus(animal) {
+  delete animal.isEndangered
+  return animal
+
+}
+
+console.log(removeEndangeredStatus(tiger))
