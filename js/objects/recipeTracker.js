@@ -16,3 +16,10 @@ const recipe2 = {
   difficultyLevel: ""
 }
 
+const recipe3 = {
+  name: "Vegetable Stir Fry",
+  ingredients: ["broccoli", "carrot", "bell pepper"],
+  cookingTime: 15,
+  totalIngredients: null,
+  difficultyLevel: ""
+};
