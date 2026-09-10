@@ -35,3 +35,6 @@ function getDifficultyLevel(cookingTime) {
     return "hard";
   }
 }
+
+const recipe1TotalIngredients = getTotalIngredients(recipe1.ingredients);
+const recipe1DifficultyLevel = getDifficultyLevel(recipe1.levevl)
