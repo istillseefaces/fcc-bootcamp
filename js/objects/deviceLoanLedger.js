@@ -9,3 +9,7 @@ const equipmentLedger = {
 function checkoutDevice() {
   
 }
+
+function checkinDevice() {
+  
+}
