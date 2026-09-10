@@ -24,11 +24,4 @@ const recipe3 = {
   difficultyLevel: ""
 };
 
-const recipe1Name = recipe1.name;
-console.log(recipe1Name);
-
-const recipe2CookingTime = recipe2.cookingTime;
-console.log(recipe2CookingTime);
-
-const recipe3Ingredients = recipe3.ingredients;
-console.log(recipe3Ingredients);
+recipes.push(recipe1, recipe2, recipe3)
