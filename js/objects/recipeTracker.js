@@ -25,3 +25,13 @@ const recipe3 = {
 };
 
 recipes.push(recipe1, recipe2, recipe3)
+
+function getDifficultyLevel(cookingTime) {
+  if (cookingTime <= 30) {
+    return "easy";
+  } else if (cookingTime <= 60) {
+    return "medium";
+  } else {
+    return "hard";
+  }
+}
