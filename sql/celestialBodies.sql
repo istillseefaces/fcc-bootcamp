@@ -68,3 +68,26 @@ VALUES
 ('Kepler-22b', 'Exoplanet', 30000.00, FALSE, (SELECT star_id FROM star WHERE name='Kepler-22')),
 ('TRAPPIST-1e', 'Rocky exoplanet', 12000.00, FALSE, (SELECT star_id FROM star WHERE name='TRAPPIST-1')),
 ('51 Pegasi b', 'Gas giant exoplanet', 140000.00, FALSE, (SELECT star_id FROM star WHERE name='51 Pegasi'));
+
+INSERT INTO moon (name, description, diameter_in_km, is_habitable, planet_id)
+VALUES
+('Luna', 'Earth natural satellite', 3474.80, FALSE, (SELECT planet_id FROM planet WHERE name='Earth')),
+('Phobos', 'Moon of Mars', 22.50, FALSE, (SELECT planet_id FROM planet WHERE name='Mars')),
+('Deimos', 'Moon of Mars', 12.40, FALSE, (SELECT planet_id FROM planet WHERE name='Mars')),
+('Io', 'Moon of Jupiter', 3643.20, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Europa', 'Icy moon of Jupiter', 3121.60, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Ganymede', 'Largest moon', 5268.20, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Callisto', 'Moon of Jupiter', 4820.60, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Amalthea', 'Small moon of Jupiter', 167.00, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Thebe', 'Moon of Jupiter', 98.60, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Himalia', 'Moon of Jupiter', 139.60, FALSE, (SELECT planet_id FROM planet WHERE name='Jupiter')),
+('Titan', 'Largest moon of Saturn', 5149.50, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Enceladus', 'Icy moon of Saturn', 504.20, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Rhea', 'Moon of Saturn', 1527.60, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Iapetus', 'Moon of Saturn', 1468.60, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Dione', 'Moon of Saturn', 1122.80, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Tethys', 'Moon of Saturn', 1062.20, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Mimas', 'Moon of Saturn', 396.40, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Hyperion', 'Irregular moon of Saturn', 270.00, FALSE, (SELECT planet_id FROM planet WHERE name='Saturn')),
+('Titania', 'Moon of Uranus', 1577.80, FALSE, (SELECT planet_id FROM planet WHERE name='Uranus')),
+('Triton', 'Largest moon of Neptune', 2706.80, FALSE, (SELECT planet_id FROM planet WHERE name='Neptune'));
