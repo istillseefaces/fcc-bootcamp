@@ -54,3 +54,17 @@ VALUES
 ('TRAPPIST-1', 'Small red dwarf star', 84100, TRUE, (SELECT galaxy_id FROM galaxy WHERE name='Milky Way')),
 ('51 Pegasi', 'Star with a gas giant planet', 861000, TRUE, (SELECT galaxy_id FROM galaxy WHERE name='Milky Way'));
 
+INSERT INTO planet (name, description, diameter_in_km, is_habitable, star_id)
+VALUES
+('Mercury', 'Closest planet to the Sun', 4879.40, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Venus', 'Hottest planet', 12104.00, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Earth', 'Our home planet', 12742.00, TRUE, (SELECT star_id FROM star WHERE name='Sun')),
+('Mars', 'The red planet', 6779.00, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Jupiter', 'Largest planet', 139820.00, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Saturn', 'Planet with rings', 116460.00, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Uranus', 'Ice giant planet', 50724.00, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Neptune', 'Distant ice giant', 49244.00, FALSE, (SELECT star_id FROM star WHERE name='Sun')),
+('Proxima Centauri b', 'Exoplanet', 14000.00, FALSE, (SELECT star_id FROM star WHERE name='Proxima Centauri')),
+('Kepler-22b', 'Exoplanet', 30000.00, FALSE, (SELECT star_id FROM star WHERE name='Kepler-22')),
+('TRAPPIST-1e', 'Rocky exoplanet', 12000.00, FALSE, (SELECT star_id FROM star WHERE name='TRAPPIST-1')),
+('51 Pegasi b', 'Gas giant exoplanet', 140000.00, FALSE, (SELECT star_id FROM star WHERE name='51 Pegasi'));
